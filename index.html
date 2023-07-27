@@ -13,9 +13,12 @@
   </head>
 <body>
   <h1>Things To Do</h1>
-  <input id="taskBox" type="text" name="taskBox" placeholder="Insert Task">
-  <button id="taskButton" onclick="addTask()">ADD</button>
-  <p>Scheduled Tasks</p>
+  <div id="dataBox">
+    <input id="taskBox" type="text" name="taskBox" placeholder="Insert Task">
+    <button id="taskButton" onclick="addTask()">ADD</button>
+  </div>
+  
+  <p id="scheduled">Scheduled Tasks:</p>
   <ul id="taskList">
     
   </ul>
