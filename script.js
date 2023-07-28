@@ -36,3 +36,13 @@ showItem();
 function clearAll(){
 	newLIst.innerHTML = localStorage.removeItem("todo");
 }
+
+newLIst.addEventListener("click", function(e){
+	if (e.target.tagName === "BUTTON") {
+		e.target.parentElement.remove();
+	}
+});
+
+
+
+
