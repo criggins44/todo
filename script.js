@@ -7,6 +7,9 @@ function addTask(){
 	let li = document.createElement('li');
 	li.innerHTML = task.value;
 	newLIst.appendChild(li);
+	let erase = document.createElement('button');
+	erase.innerHTML = 'DELETE';
+	li.appendChild(erase);
 	let errand = task.value
 
 	task.value = '';
@@ -29,3 +32,7 @@ function showItem(){
 	newLIst.innerHTML = localStorage.getItem("todo");
 }
 showItem();
+
+function clearAll(){
+	newLIst.innerHTML = localStorage.removeItem("todo");
+}
